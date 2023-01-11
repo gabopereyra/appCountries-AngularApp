@@ -2,8 +2,11 @@
 <hr />
 <div class="row">
   <div class="col">
-    <app-pais-input (onEnterTermino)="buscar( $event )">
-
+    <app-pais-input 
+        (onEnterTermino)="buscar( $event )"
+        (onDebounce)="sugerencias( $event )"
+        [_placeholder] = "_placeholder"
+        >
     </app-pais-input>
   </div>
 </div>

@@ -11,6 +11,7 @@ export class PorPaisComponent {
   public termino: string = '';
   public ocurrioError: boolean = false;
   public countries: Country[] = [];
+  public _placeholder : string = "Buscar por pais"
 
   constructor(private paisService: PaisService) {}
 
@@ -27,5 +28,9 @@ export class PorPaisComponent {
           this.ocurrioError = true;
         },
       });
+  }
+  
+  sugerencias(event : string){
+
   }
 }
