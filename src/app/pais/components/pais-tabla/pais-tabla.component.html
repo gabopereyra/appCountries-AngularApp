@@ -14,7 +14,7 @@
         <td><img [src]="item.flags.svg" alt="" class="small-flag" /></td>
         <td>{{ item.name.common }}</td>
         <td>{{ item.population | number }}</td>
-        <td><a [routerLink]="['/pais', item.name.common]">Ver mas...</a></td>
+        <td><a [routerLink]="['/pais/', item.cca2]">Ver mas...</a></td>
       </tr>
     </tbody>
   </table>
