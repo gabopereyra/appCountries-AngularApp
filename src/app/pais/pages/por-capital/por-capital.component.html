@@ -1,13 +1,15 @@
-<h2>Por capital</h2>
-<hr />
-<div class="row">
-  <div class="col">
-    <app-pais-input 
-        (onEnterTermino)="buscar( $event )"
-        (onDebounce)="sugerencias( $event )"
-        [_placeholder] = "_placeholder"
-        >
-    </app-pais-input>
+<div class="animate__animated animate__fadeIn">
+  <h2>Por capital</h2>
+  <hr />
+  <div class="row">
+    <div class="col">
+      <app-pais-input
+        (onEnterTermino)="buscar($event)"
+        (onDebounce)="sugerencias($event)"
+        [_placeholder]="_placeholder"
+      >
+      </app-pais-input>
+    </div>
   </div>
 </div>
 
@@ -22,4 +24,3 @@
     <app-pais-tabla [countries]="countries"></app-pais-tabla>
   </div>
 </div>
-

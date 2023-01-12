@@ -8,8 +8,9 @@
         <th>Ver mas</th>
       </tr>
     </thead>
+    
     <tbody *ngFor="let item of countries; let i = index">
-      <tr>
+      <tr class="animate__animated animate__fadeIn">
         <td>{{ i + 1 }}</td>
         <td><img [src]="item.flags.svg" alt="" class="small-flag" /></td>
         <td>{{ item.name.common }}</td>
