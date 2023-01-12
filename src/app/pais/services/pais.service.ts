@@ -29,4 +29,11 @@ export class PaisService {
 
     return this.httpClient.get<Country>(url);
   }
+
+  buscarPaisPorRegion(termino: string) : Observable<Country []>{
+    const url = `${this._url}/region/${termino}`;
+
+    return this.httpClient.get<Country []>(url);
+  }
+
 }
