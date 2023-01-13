@@ -2,7 +2,7 @@
 
 Project made with Angular in its version 14.2.6.
 
-## Sobre el proyecto
+## About the project
 
 <p>It is an application that found Countries by name/region/capital from the site <a href="https://restcountries.com/"><b>giphy</b></a></p>
 <p>It also provides other information about the country in question</p>
